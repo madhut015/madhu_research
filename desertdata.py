@@ -26,8 +26,8 @@ from pyproj import Proj, transform
 import matplotlib.pyplot as plt
 import seaborn as sns; sns.set(font_scale = 1.2)
 
-rasterArray = gdal_array.LoadFile(r"NewDataDesert\desert_som_output.gri")
-rA = gdal.Open(r"NewDataDesert\desert_som_output.gri")
+rasterArray = gdal_array.LoadFile(r"../scratch/NewDataDesert/desert_som_output.gri")
+rA = gdal.Open(r"../scratch/NewDataDesert/desert_som_output.gri")
 rA.GetMetadata().values()
 
 type(rasterArray)
